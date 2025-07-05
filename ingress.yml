@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: minimal-ingress
+  name: minimal-ingress   #Name as per your company requrments 
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx-example
+  ingressClassName: nginx-example    #this name is very imp this name is as per your ingress controll doc.
   rules:
   - http:
       paths:
